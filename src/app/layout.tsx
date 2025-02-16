@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TeamPixes | Digital Development & Design Studio",
+  title: "Team Pixes | Digital Development & Design Studio",
   description:
     "Professional web development and design services - Where Vision Takes Form",
   keywords:
-    "TeamPixes, web development, design studio, digital agency, Pakistan",
+    "team pixes, Team Pixes, TeamPixes, web development, design studio, digital agency, Pakistan",
   openGraph: {
     title: "TeamPixes",
     description: "Where Vision Takes Form - Professional Development & Design",
