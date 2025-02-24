@@ -5,7 +5,6 @@ import Bg from "@/components/bg";
 import { useEffect, useMemo, useState } from "react";
 import SVGIMG from "@/app/plant.svg";
 import Image from "next/image";
-import { Dancing_Script } from "next/font/google";
 import { dancingScript } from "@/components/font";
 
 export default function Home() {
