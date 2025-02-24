@@ -2,10 +2,11 @@
 
 import Bg from "@/components/bg";
 
-import { dosis } from "./layout";
 import { useEffect, useMemo, useState } from "react";
 import SVGIMG from "@/app/plant.svg";
 import Image from "next/image";
+import { Dancing_Script } from "next/font/google";
+import { dancingScript } from "@/components/font";
 
 export default function Home() {
   const messages = useMemo(
@@ -79,9 +80,8 @@ export default function Home() {
             {messages[currentIndex][0]}
           </p>
           <p
-            className={`text-[250px] -mt-14 font-sans font-semibold ${
-              dosis.className
-            } transition-all duration-500 ease-in-out
+            className={`text-[250px] -mt-14 font-sans font-semibold  transition-all duration-500 ease-in-out
+              ${dancingScript.className} 
             transform
             ${
               isVisible

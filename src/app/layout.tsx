@@ -1,13 +1,7 @@
 import "./globals.css";
-
-import { Inter, Dancing_Script as Dosis } from "next/font/google";
+import { Inter, Dancing_Script } from "next/font/google";
 
 const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-export const dosis = Dosis({
   subsets: ["latin"],
   display: "swap",
 });
