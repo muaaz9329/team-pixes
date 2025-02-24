@@ -1,29 +1,16 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import { Inter, Dancing_Script as Dosis } from "next/font/google";
+
+const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const dosis = Dosis({
   subsets: ["latin"],
+  display: "swap",
 });
-
-export const metadata: Metadata = {
-  title: "Team Pixes | Digital Development & Design Studio",
-  description:
-    "Professional web development and design services - Where Vision Takes Form",
-  keywords:
-    "team pixes, Team Pixes, TeamPixes, web development, design studio, digital agency, Pakistan",
-  openGraph: {
-    title: "TeamPixes",
-    description: "Where Vision Takes Form - Professional Development & Design",
-    images: "/og-image.jpg",
-  },
-};
 
 export default function RootLayout({
   children,
@@ -32,11 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
